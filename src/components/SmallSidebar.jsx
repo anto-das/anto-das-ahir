@@ -2,6 +2,7 @@
 import { FaBuysellads } from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
 import SocialIcons from './SocialIcons';
+import Logo from '../Shared/Logo';
 
 const SmallSidebar = () => {
     const links =<>
@@ -16,7 +17,7 @@ const SmallSidebar = () => {
     </>
     return (
         <div className="menu bg-[#141414] text-base-content min-h-full w-96 py-7 px-8 space-y-5">
-      <p className="text-2xl p-2 font-black text-[#ff014f] flex items-center border-b border-[#969696]"><FaBuysellads /> <span className="text-white">Anto</span></p>
+            <Logo></Logo>
       <div>
         {links}
       </div>

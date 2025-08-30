@@ -4,12 +4,13 @@ import SocialIcons from './SocialIcons';
 import { IoCall } from 'react-icons/io5';
 import { HiOutlineMail } from 'react-icons/hi';
 import { PiAddressBookLight } from 'react-icons/pi';
+import Logo from '../Shared/Logo';
 
 const LargeSidebar = () => {
     return (
         <div className="menu bg-[#141414] text-base-content min-h-full w-96 py-7 px-8">
       <div className='py-5 space-y-8'>
-        <p className="text-2xl p-2 font-black text-[#ff014f] flex items-center"><FaBuysellads /> <span className="text-white">Anto</span></p>
+        <Logo></Logo>
         <div>
             <img src={sideImg} alt="" />
         </div>

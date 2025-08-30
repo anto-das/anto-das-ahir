@@ -5,6 +5,7 @@ import SocialIcons from "../components/SocialIcons";
 import { FaBuysellads } from "react-icons/fa";
 import LargeSidebar from "../components/LargeSidebar";
 import SmallSidebar from "../components/SmallSidebar";
+import Logo from "./Logo";
 
 
 const Navbar = () => {
@@ -21,9 +22,10 @@ const Navbar = () => {
     return (
       <div className="bg-[#141414] shadow-sm py-3">
           <div className="flex justify-between items-center w-11/12 mx-auto">
-  <div>
-    <p className="text-2xl p-2 font-black text-[#ff014f] flex items-center"><FaBuysellads /> <span className="text-white">Anto</span></p>
-  </div>
+  
+    {/* logo */}
+    <Logo></Logo>
+  
   <div className="navbar-center flex">
     {links}
   </div>
