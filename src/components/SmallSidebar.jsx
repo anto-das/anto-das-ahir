@@ -1,23 +1,27 @@
 
 import { FaBuysellads } from 'react-icons/fa';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import SocialIcons from './SocialIcons';
 import Logo from '../Shared/Logo';
+import { RxCross1 } from 'react-icons/rx';
 
-const SmallSidebar = () => {
+const SmallSidebar = ({closeDrawer}) => {
     const links =<>
-    <ul className="grid gap-5">
-      <li className='border-b  border-[#969696] '><NavLink className={'text-[#969696] uppercase font-bold text-[16px]'}>Home</NavLink></li>
-      <li className='border-b  border-[#969696] '><NavLink className={'text-[#969696] uppercase font-bold text-[16px]'}>About</NavLink></li>
-      <li className='border-b  border-[#969696] '><NavLink className={'text-[#969696] uppercase font-bold text-[16px]'}>Service</NavLink></li>
-      <li className='border-b  border-[#969696] '><NavLink className={'text-[#969696] uppercase font-bold text-[16px]'}>Blog</NavLink></li>
-      <li className='border-b  border-[#969696] '><NavLink className={'text-[#969696] uppercase font-bold text-[16px]'}>Projects</NavLink></li>
-      <li ><NavLink className={'text-[#969696] uppercase font-bold text-[16px]'}>Contact</NavLink></li>
+    <ul  onClick={()=>closeDrawer()} className="grid gap-5">
+      <li className='border-b  border-[#969696] '><Link to={'/'} className={'text-[#969696] uppercase font-bold text-[16px]'}>Home</Link></li>
+      <li className='border-b  border-[#969696] '><Link to={'/about'} className={'text-[#969696] uppercase font-bold text-[16px]'}>About</Link></li>
+      <li className='border-b  border-[#969696] '><Link to={'/service'} className={'text-[#969696] uppercase font-bold text-[16px]'}>Service</Link></li>
+      <li className='border-b  border-[#969696] '><Link to={'/blog'} className={'text-[#969696] uppercase font-bold text-[16px]'}>Blog</Link></li>
+      <li className='border-b  border-[#969696] '><Link to={'/project'} className={'text-[#969696] uppercase font-bold text-[16px]'}>Projects</Link></li>
+      <li ><Link to={'/contact'} className={'text-[#969696] uppercase font-bold text-[16px]'}>Contact</Link></li>
     </ul>
     </>
     return (
-        <div className="menu bg-[#141414] text-base-content min-h-full w-96 py-7 px-8 space-y-5">
-            <Logo></Logo>
+        <div className="menu bg-[#141414] text-base-content min-h-full max-w-96 py-7 px-4 md:px-6 lg:px-8 space-y-5">
+            <div className='flex justify-between items-center'>
+        <Logo></Logo>
+        <button onClick={()=>closeDrawer()} className="drawer-button btn btn-circle border-none shadow-none transition duration-500 hover:bg-[#FF014F] bg-black text-white text-xl"><RxCross1 /></button>
+        </div>
       <div>
         {links}
       </div>
