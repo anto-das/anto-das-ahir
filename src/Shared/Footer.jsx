@@ -52,7 +52,7 @@ const Footer = () => {
  <div className="flex flex-col lg:flex-row  justify-between items-center">
     <p className="text-white mt-2 text-center">&copy; Anto Das Ahir  {new Date().getFullYear()} | <span className="text-md font-medium text-gray-600"> All Rights Reserved</span> </p>
     <div className="flex flex-col lg:flex-row gap-3 mt-2 items-center">
-       <p ><Link className={'text-white uppercase font-medium text-sm hover:border-b-2 hover:border-[#ff014f] transition border-w-full hover:text-[#ff014f] duration-1000'}>Contact us</Link></p>
+       <p ><Link to={'/contact'} className={'text-white uppercase font-medium text-sm hover:border-b-2 hover:border-[#ff014f] transition border-w-full hover:text-[#ff014f] duration-1000'}>Contact me</Link></p>
        <p ><Link className={'text-white uppercase font-medium text-sm hover:border-b-2 hover:border-[#ff014f] transition border-w-full hover:text-[#ff014f] duration-1000'}>terms & condition</Link></p>
        <p ><Link className={'text-white uppercase font-medium text-sm hover:border-b-2 hover:border-[#ff014f] transition border-w-full hover:text-[#ff014f] duration-1000'}>Privacy Policy</Link></p>
     </div>

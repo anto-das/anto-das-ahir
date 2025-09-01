@@ -5,7 +5,7 @@ import Footer from "../Shared/Footer";
 
 const Main = () => {
     return (
-        <div className="relative">
+        <div className="relative bg-black">
             {/* navbar */}
           <div className="sticky top-0 z-10">
               <Navbar></Navbar>
