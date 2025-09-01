@@ -1,0 +1,58 @@
+[
+  {
+    "thumbnail": "https://i.ibb.co.com/CKZggXj1/cart.jpg",
+    "projectName": "Deal Heaven",
+    "shortDescription": "Coupon and deals platform with user-friendly interface.",
+    "techStack": {
+      "html":"HTML", 
+      "css":"CSS", 
+       "react":"React", 
+      "tailwindcss":"TailwindCSS",
+      "node" :  "Node.js", 
+       "express":  "Express", 
+       "mongodb":  "MongoDB"
+    },
+    "links": {
+      "live": "https://deal-heaven-8213e.web.app",
+      "client": "https://github.com/anto-das/DEAL-HEAVEN"
+    }
+  },
+  {
+    "thumbnail": "https://i.ibb.co.com/d2gMtN9/spider.jpg",
+    "projectName": "GameScope",
+    "shortDescription": "Game review website with ratings, comments, and recommendations.",
+    "techStack": {
+      "html":"HTML",
+       "css":"CSS", 
+       "react":"React",
+        "tailwindcss":"TailwindCSS",
+      "node" :  "Node.js", 
+       "express":  "Express", 
+       "mongodb":  "MongoDB"
+        },
+    "links": {
+      "live": "https://game-scope.web.app",
+      "client": "https://github.com/anto-das/game-scope-client",
+      "server": "https://github.com/anto-das/game-scope-server"
+    }
+  },
+  {
+    "thumbnail": "https://i.ibb.co.com/ynMx3c6x/card-7.jpg",
+    "projectName": "Global Givers",
+    "shortDescription": "Donation platform connecting givers with causes worldwide easily.",
+    "techStack": {
+      "html":"HTML",
+      "css": "CSS",
+      "react":  "React",
+      "tailwindcss":   "TailwindCSS",
+      "node":    "Node.js",
+      "express":     "Express",
+      "mongodb":      "MongoDB"
+          },
+    "links": {
+      "live": "https://global-givers.web.app/",
+      "client": "https://github.com/anto-das/global-givers-client",
+      "server": "https://github.com/anto-das/global-givers-server"
+    }
+  }
+]

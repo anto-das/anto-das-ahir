@@ -8,8 +8,6 @@ const Footer = () => {
      const links =<>
     <ul className="grid gap-5">
       <li className='border-b '><Link to={'/about'} className={'text-white font-medium capitalize text-[16px] hover:border-b-2 hover:border-[#ff014f] transition border-w-full hover:text-[#ff014f] duration-1000'}>About me</Link></li>
-      <li className='border-b '><Link to={'/service'} className={'text-white font-medium capitalize  text-[16px] hover:border-b-2 hover:border-[#ff014f] transition border-w-full hover:text-[#ff014f] duration-1000'}>Service</Link></li>
-      <li className='border-b '><Link to={'/blog'} className={'text-white font-medium capitalize  text-[16px] hover:border-b-2 hover:border-[#ff014f] transition border-w-full hover:text-[#ff014f] duration-1000'}>Blog</Link></li>
       <li className='border-b '><Link to={'/project'} className={'text-white font-medium capitalize  text-[16px] hover:border-b-2 hover:border-[#ff014f] transition border-w-full hover:text-[#ff014f] duration-1000'}>Pricing</Link></li>
       <li ><Link to={'/contact'} className={'text-white font-medium capitalize  text-[16px] hover:border-b-2 hover:border-[#ff014f] transition border-w-full hover:text-[#ff014f] duration-1000'}>Contact me</Link></li>
     </ul>
@@ -44,7 +42,7 @@ const Footer = () => {
     </div>
     <div className="flex gap-3 lg:gap-5 items-center">
         <IoCall className='text-4xl  border p-2 rounded-full text-gray-300' />
-      <p className='text-white  uppercase text-md hover:border-b-2 hover:border-[#ff014f] transition border-w-full hover:text-[#ff014f] duration-1000'>+8801948039854</p>
+      <p className='text-white  uppercase text-md hover:border-b-2 hover:border-[#ff014f] transition border-w-full hover:text-[#ff014f] duration-1000'>+8801948039854 || +8801845282040</p>
     </div>
     <SocialIcons></SocialIcons>
   </nav>
