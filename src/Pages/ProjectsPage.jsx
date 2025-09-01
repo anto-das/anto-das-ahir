@@ -1,14 +1,10 @@
-import { useEffect, useState } from "react";
+
 import PageBanner from "../components/PageBanner";
 import ProjectsCard from "../components/ProjectsCard";
+import useData from "../hooks/useData";
 
 const ProjectsPage = () => {
-    const [projects,setProjects] = useState([]);
-    useEffect(()=>{
-        fetch('./projects.json')
-        .then(res =>res.json())
-        .then(data => setProjects(data))
-    },[])
+    const [projects] =useData();
     return (
         <div>
             <PageBanner pageName={'projects'}></PageBanner>

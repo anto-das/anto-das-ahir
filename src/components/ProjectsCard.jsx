@@ -1,6 +1,6 @@
 
 const ProjectsCard = ({project}) => {
-    const {thumbnail,projectName,shortDescription,techStack,links} = project;
+    const {thumbnail,projectName,shortDescription,techStack,category,links} = project;
     return (
        <div className="border border-[#141414] hover:border hover:border-[#ff014f] transition-all duration-1000 p-6 rounded space-y-5 bg-[#141414]">
   <div className="">
@@ -10,8 +10,8 @@ const ProjectsCard = ({project}) => {
       alt="Shoes" />
   </div>
   <div className="">
-    <h2 className="card-title text-[#969696]">
-      {projectName}
+    <h2 className="card-title flex items-center justify-between text-[#969696]">
+     <span> {projectName}</span> <span className="uppercase badge">{category}</span>
     </h2>
     <p className="text-[#969696]">{shortDescription}</p>
     <p className="text-[#969696]"> <span className="text-gray-200 font-bold text-md"> Technologies: </span> {techStack.html},

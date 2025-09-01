@@ -3,6 +3,7 @@
     "thumbnail": "https://i.ibb.co.com/CKZggXj1/cart.jpg",
     "projectName": "Deal Heaven",
     "shortDescription": "Coupon and deals platform with user-friendly interface.",
+    "category":"frontend",
     "techStack": {
       "html":"HTML", 
       "css":"CSS", 
@@ -21,6 +22,7 @@
     "thumbnail": "https://i.ibb.co.com/d2gMtN9/spider.jpg",
     "projectName": "GameScope",
     "shortDescription": "Game review website with ratings, comments, and recommendations.",
+    "category":"full-stack",
     "techStack": {
       "html":"HTML",
        "css":"CSS", 
@@ -40,6 +42,7 @@
     "thumbnail": "https://i.ibb.co.com/ynMx3c6x/card-7.jpg",
     "projectName": "Global Givers",
     "shortDescription": "Donation platform connecting givers with causes worldwide easily.",
+    "category":"full-stack",
     "techStack": {
       "html":"HTML",
       "css": "CSS",
