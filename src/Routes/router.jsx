@@ -3,6 +3,7 @@ import Main from "../Pages/Main";
 import Home from "../Pages/Home";
 import ContactPage from "../Pages/ContactPage";
 import ProjectsPage from "../Pages/ProjectsPage";
+import AboutPage from "../Pages/AboutPage";
 
 
 const router = createBrowserRouter([
@@ -17,7 +18,7 @@ const router = createBrowserRouter([
         },
         {
           path:'/about',
-          element:<div>about page</div>
+          element:<AboutPage></AboutPage>
         },
         {
           path:'/project',
