@@ -18,6 +18,11 @@ const Education = () => {
     <h2 className="card-title text-[#969696] uppercase"> Complete web development with programming hero </h2>
     <p className="text-[#969696] capitalize text-lg">Programming hero</p>
   </div>
+  {/* course outlin */}
+  <div className="card-body bg-[#141414] hover:border-[#ff014f] transition-all duration-1000 border rounded-lg">
+    <h2 className="card-title text-[#969696] uppercase"> Achieved 94%+ marks in all coursework assignments. </h2>
+    <p className="text-[#969696] capitalize text-lg">Academic Excellence</p>
+  </div>
 </div>
      </div>
     );

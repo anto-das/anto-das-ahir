@@ -38,8 +38,8 @@ const AboutPage = () => {
            </div>
            <ChartBar></ChartBar>
             <Education></Education>
-            <ContactForm></ContactForm>
            </div>
+            <ContactForm></ContactForm>
         </div>
     );
 };
