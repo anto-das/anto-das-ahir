@@ -1,22 +1,35 @@
 
 import { HiMenu } from "react-icons/hi";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, } from "react-router-dom";
 import SocialIcons from "../components/SocialIcons";
 import { FaBuysellads } from "react-icons/fa";
 import LargeSidebar from "../components/LargeSidebar";
 import SmallSidebar from "../components/SmallSidebar";
 import Logo from "./Logo";
 import './navbar.css'
+import { useEffect, useState } from "react";
 
 
 const Navbar = () => {
-  // const [closeDrawer,setCloseDrawer] = useState(true);
+  const [isSticky,setSticky] =useState(false);
+  const handleScroll = () =>{
+    if(window.scrollY > 160){
+      setSticky(true)
+    }
+    else{
+      setSticky(false)
+    }
+  }
+  useEffect(()=>{
+    window.addEventListener('scroll',handleScroll)
+    return ()=>{
+      window.removeEventListener('scroll',handleScroll)
+    }
+  },[])
   const closeDrawer=()=>{
     document.getElementById("my-drawer").checked = false;
     document.getElementById("my-drawer-4").checked = false;
   }
-  
-  // console.log(closeDrawer)
     const links =<>
     <ul className="lg:flex items-center hidden gap-5">
       <li><NavLink to={'/'} className={'text-white font-bold text-[16px] hover:bg-[#ff014d3f] hover:text-[#FF014F] p-2 rounded transition-all duration-900'}>Home</NavLink></li>
@@ -26,7 +39,7 @@ const Navbar = () => {
     </ul>
     </>
     return (
-      <div className="bg-[#141414] shadow-sm py-3">
+      <div className={`${isSticky ? 'bg-[#141414]' :'bg-[#14141456]'} shadow-sm py-3`}>
           <div className="flex justify-between items-center w-11/12 mx-auto">
   
     {/* logo */}

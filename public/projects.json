@@ -26,8 +26,9 @@
     "techStack": {
       "html":"HTML",
        "css":"CSS", 
+       "tailwindcss":"TailwindCSS",
+       "javascript":"Javascript",
        "react":"React",
-        "tailwindcss":"TailwindCSS",
       "node" :  "Node.js", 
        "express":  "Express", 
        "mongodb":  "MongoDB"
@@ -46,10 +47,12 @@
     "techStack": {
       "html":"HTML",
       "css": "CSS",
-      "react":  "React",
       "tailwindcss":   "TailwindCSS",
+      "javascript":   "Javascript",
+      "react":  "React",
       "node":    "Node.js",
       "express":     "Express",
+      "jwt":     "JWT",
       "mongodb":      "MongoDB"
           },
     "links": {
