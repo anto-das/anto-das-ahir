@@ -48,7 +48,7 @@ const HomePageBanner = () => {
       </p>
       <div className='w-1/2 flex flex-col lg:flex-row justify-between items-start gap-3'>
       <a
-       href="https://drive.google.com/file/d/1hEhezuibsXInPJoXGauDfzdmKLPf4Ehb/view?usp=drive_link" 
+       href="https://drive.google.com/file/d/17wLXz1ptk7R1x2o1a2rBeFZoIdrIay1T/view?usp=drive_link" 
   target="_blank" 
   rel="noopener noreferrer"
       className="border border-[#ff014f] px-2 py-1  hover-border-[#ff014f] transition-all duration-900 hover:bg-transparent text-lg hover:text-[#ff014f] btn shadow-none rounded-none text-white bg-[#ff014f]"><FaRegShareSquare /> Resume</a>
