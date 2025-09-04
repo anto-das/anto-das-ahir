@@ -47,7 +47,11 @@ const HomePageBanner = () => {
         quasi. In deleniti eaque aut repudiandae et a id nisi.
       </p>
       <div className='w-1/2 flex flex-col lg:flex-row justify-between items-start gap-3'>
-      <Link><button className="border border-[#ff014f] px-2 py-1  hover-border-[#ff014f] transition-all duration-900 hover:bg-transparent text-lg hover:text-[#ff014f] btn shadow-none rounded-none text-white bg-[#ff014f]"><FaRegShareSquare /> Resume</button></Link>
+      <a
+       href="https://drive.google.com/file/d/1hEhezuibsXInPJoXGauDfzdmKLPf4Ehb/view?usp=drive_link" 
+  target="_blank" 
+  rel="noopener noreferrer"
+      className="border border-[#ff014f] px-2 py-1  hover-border-[#ff014f] transition-all duration-900 hover:bg-transparent text-lg hover:text-[#ff014f] btn shadow-none rounded-none text-white bg-[#ff014f]"><FaRegShareSquare /> Resume</a>
      <Link to={'/contact'}>
      <button className="px-2 py-1 border border-[#ff014f] transition-all duration-900 bg-transparent text-lg text-[#ff014f] btn shadow-none rounded-none hover:text-white hover:bg-[#ff014f]"> <IoCall/> Contact</button>
      </Link>
