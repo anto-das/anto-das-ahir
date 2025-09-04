@@ -2,6 +2,9 @@ import bgImg from '../assets/mkm5.jpg';
 import profile from '../assets/blur img.jpg';
 import { TypeAnimation } from 'react-type-animation';
 import 'animate.css';
+import { Link } from 'react-router-dom';
+import { IoCall } from 'react-icons/io5';
+import { FaRegShareSquare } from 'react-icons/fa';
 const HomePageBanner = () => {
     return (
      <div style={{backgroundImage:`url(${bgImg})`}} className='w-full h-210 md:h-100 lg:h-150 bg-cover bg-center bg-no-repeat relative'>
@@ -44,8 +47,10 @@ const HomePageBanner = () => {
         quasi. In deleniti eaque aut repudiandae et a id nisi.
       </p>
       <div className='w-1/2 flex flex-col lg:flex-row justify-between items-start gap-3'>
-      <button className="border border-[#ff014f] px-2 py-1 hover-border-[#ff014f] transition-all duration-900 btn bg-transparent text-lg shadow-none rounded-none text-[#ff014f] hover:text-white hover:bg-[#ff014f] font-semibold">Get Started</button>
-      <button className="border border-[#ff014f] px-2 py-1  hover-border-[#ff014f] transition-all duration-900 hover:bg-transparent text-lg hover:text-[#ff014f] btn shadow-none rounded-none text-white bg-[#ff014f]">Get Started</button>
+      <Link><button className="border border-[#ff014f] px-2 py-1  hover-border-[#ff014f] transition-all duration-900 hover:bg-transparent text-lg hover:text-[#ff014f] btn shadow-none rounded-none text-white bg-[#ff014f]"><FaRegShareSquare /> Resume</button></Link>
+     <Link>
+     <button className="px-2 py-1 border border-[#ff014f] transition-all duration-900 bg-transparent text-lg text-[#ff014f] btn shadow-none rounded-none hover:text-white hover:bg-[#ff014f]"> <IoCall/> Contact</button>
+     </Link>
       </div>
     </div>
   </div>
