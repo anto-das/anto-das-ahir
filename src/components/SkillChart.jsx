@@ -1,8 +1,8 @@
-import React from 'react';
 
-const ChartBar = () => {
+
+const SkillChart = () => {
     return (
-       <div className='py-5 my-8'>
+         <div className='py-5 my-8'>
          <div className='grid lg:grid-cols-2 gap-x-8 space-y-8 pt-5'>
             <p className='text-2xl font-bold text-white uppercase'>development skill <span className='text-[#141414]'>________</span></p>
             <p></p>
@@ -63,4 +63,4 @@ const ChartBar = () => {
     );
 };
 
-export default ChartBar;
+export default SkillChart;

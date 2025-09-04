@@ -1,6 +1,4 @@
 import { TbTopologyFull } from "react-icons/tb";
-import ChartBar from "../components/ChartBar";
-import PageBanner from "../components/PageBanner";
 import Education from "../Shared/Education";
 import Card from "../Shared/Card";
 import { SiFrontendmentor } from "react-icons/si";
@@ -10,6 +8,7 @@ import useData from "../hooks/useData";
 import ProjectsCard from "../components/ProjectsCard";
 import ContactForm from "../Shared/ContactForm";
 import HomePageBanner from "../components/HomePageBanner";
+import SkillChart from "../components/SkillChart";
 
 const HomePage = () => {
      const [projects] =useData();
@@ -47,8 +46,7 @@ const HomePage = () => {
            info={'I have completed full-stack apps with React, Node.js, MongoDB, JWT, Framer-motion.'}
            ></Card>           
            </div>
-         
-           <ChartBar></ChartBar>
+           <SkillChart></SkillChart>
             <Education></Education>
            </div>
             <ContactForm></ContactForm>
