@@ -17,7 +17,7 @@ const ContactPage = () => {
             <Card 
             icon={<HiOutlineMail/>}
             title={'e-mail'}
-            info={'ahirdas4455@gmail.com'}></Card>
+            info={'antodasahir@gmail.com'}></Card>
             <Card
             icon={<IoCall/>}
             title={'call me'}

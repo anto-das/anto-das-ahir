@@ -34,7 +34,7 @@ const Footer = () => {
     <h1 className="text-lg text-white font-bold">Contact</h1>
     <div className="flex gap-3 lg:gap-5 items-center">
         <IoMail className='text-4xl  border p-2 rounded-full text-gray-300' />
-      <p className='text-white  text-md hover:border-b-2 hover:border-[#ff014f] transition border-w-full hover:text-[#ff014f] duration-1000'>ahirdas4455@gmail.com</p>
+      <p className='text-white  text-md hover:border-b-2 hover:border-[#ff014f] transition border-w-full hover:text-[#ff014f] duration-1000'>antodasahir@gmail.com</p>
     </div>
     <div className="flex gap-3 lg:gap-5 items-center">
         <IoLocation className='text-4xl  border p-2 rounded-full text-gray-300' />

@@ -32,7 +32,7 @@ const LargeSidebar = ({closeDrawer}) => {
             <HiOutlineMail className='text-5xl  border p-2 rounded text-gray-300' />
             <div>
                 <p className='text-[#ff014f] text-md uppercase font-bold'>mail me</p>
-                <p className='text-white text-xl'>ahirdas4455@gmail.com</p>
+                <p className='text-white text-xl'>antodasahir@gmail.com</p>
             </div>
         </div>
         <div className='flex items-center gap-6'>
