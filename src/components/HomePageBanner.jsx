@@ -48,7 +48,7 @@ const HomePageBanner = () => {
       </p>
       <div className='w-1/2 flex flex-col lg:flex-row justify-between items-start gap-3'>
       <Link><button className="border border-[#ff014f] px-2 py-1  hover-border-[#ff014f] transition-all duration-900 hover:bg-transparent text-lg hover:text-[#ff014f] btn shadow-none rounded-none text-white bg-[#ff014f]"><FaRegShareSquare /> Resume</button></Link>
-     <Link>
+     <Link to={'/contact'}>
      <button className="px-2 py-1 border border-[#ff014f] transition-all duration-900 bg-transparent text-lg text-[#ff014f] btn shadow-none rounded-none hover:text-white hover:bg-[#ff014f]"> <IoCall/> Contact</button>
      </Link>
       </div>

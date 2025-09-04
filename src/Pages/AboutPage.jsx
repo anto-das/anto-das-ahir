@@ -4,9 +4,9 @@ import Card from "../Shared/Card";
 import { SiFrontendmentor } from "react-icons/si";
 import { FaWebAwesome } from "react-icons/fa6";
 import { TbTopologyFull } from "react-icons/tb";
-import ChartBar from "../components/ChartBar";
 import Education from "../Shared/Education";
 import ContactForm from "../Shared/ContactForm";
+import SkillChart from "../components/SkillChart";
 
 const AboutPage = () => {
     // 14 ta ui/ux 6 full-stack 10 ta frontend
@@ -36,7 +36,7 @@ const AboutPage = () => {
            info={'I have completed full-stack apps with React, Node.js, MongoDB, JWT, Framer-motion.'}
            ></Card>           
            </div>
-           <ChartBar></ChartBar>
+           <SkillChart></SkillChart>
             <Education></Education>
            </div>
             <ContactForm></ContactForm>
