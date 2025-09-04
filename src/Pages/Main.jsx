@@ -6,7 +6,6 @@ import { useEffect, useState } from "react";
 
 const Main = () => {
     const [isSticky,setSticky] =useState(false);
-      console.log(isSticky)
       const handleScroll = () =>{
         if(window.scrollY > 160){
           setSticky(true)

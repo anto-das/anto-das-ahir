@@ -14,14 +14,15 @@ const ProjectsCard = ({project}) => {
      <span> {projectName}</span> <span className="uppercase badge">{category}</span>
     </h2>
     <p className="text-[#969696]">{shortDescription}</p>
-    <p className="text-[#969696]"> <span className="text-gray-200 font-bold text-md"> Technologies: </span> {techStack.html},
-        {techStack.css},
-        {techStack.tailwindcss}, <br />
-        {techStack.javascript && techStack.javascript},
+    <p className="text-[#969696]"> <span className="text-gray-200 md:w-full lg:w-full font-bold text-md"> Technologies: </span> {techStack.html},
+        {techStack.css},<br />
+           {techStack.javascript},
         {techStack.react},
+        {techStack.tailwindcss}, <br />
         {techStack.node},
         {techStack.express},
-        {techStack.mongodb} </p>
+        {techStack.mongodb} 
+         </p>
     <div className="card-actions justify-end mt-2">
       <a 
       href={links?.live}
