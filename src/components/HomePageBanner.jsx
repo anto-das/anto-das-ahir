@@ -7,7 +7,7 @@ import { IoCall } from 'react-icons/io5';
 import { FaRegShareSquare } from 'react-icons/fa';
 const HomePageBanner = () => {
     return (
-     <div style={{backgroundImage:`url(${bgImg})`}} className='w-full h-215 md:h-100 lg:h-120 bg-cover bg-center bg-no-repeat relative'>
+     <div style={{backgroundImage:`url(${bgImg})`}} className='w-full h-185 md:h-100 lg:h-120 bg-cover bg-center bg-no-repeat relative'>
            <div className='space-y-5 flex flex-col justify-between items-center absolute inset-0 bg-black/50 '>
            <div className="hero w-11/12 mx-atuo">
   <div className="hero-content justify-center items-center py-10 flex-col md:flex-row-reverse lg:flex-row-reverse">
@@ -42,9 +42,8 @@ const HomePageBanner = () => {
       className='font-medium text-[#ff014f] capitalize text-xl md:text-3xl lg:text-5xl'
       repeat={Infinity}
     />
-      <p className="py-6 text-lg text-[#969696]">
-        Provident cupiditate voluptatem et in. Quaerat fugiat  ut assumenda excepturi exercitationem
-        quasi. In deleniti eaque aut repudiandae et a id nisi.
+      <p className="py-3 text-lg text-[#969696]">
+       Driven by curiosity, passion, and the art of transforming ideas into digital reality, this creative junior web developer combines code and design to create slick, responsive, and captivating web experiences.
       </p>
       <div className='w-1/2 flex flex-row justify-between items-start gap-3'>
       <a
