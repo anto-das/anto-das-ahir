@@ -7,12 +7,12 @@ import { IoCall } from 'react-icons/io5';
 import { FaRegShareSquare } from 'react-icons/fa';
 const HomePageBanner = () => {
     return (
-     <div style={{backgroundImage:`url(${bgImg})`}} className='w-full h-210 md:h-100 lg:h-150 bg-cover bg-center bg-no-repeat relative'>
+     <div style={{backgroundImage:`url(${bgImg})`}} className='w-full h-215 md:h-100 lg:h-120 bg-cover bg-center bg-no-repeat relative'>
            <div className='space-y-5 flex flex-col justify-between items-center absolute inset-0 bg-black/50 '>
            <div className="hero w-11/12 mx-atuo">
   <div className="hero-content justify-center items-center py-10 flex-col md:flex-row-reverse lg:flex-row-reverse">
     {/* image div */}
-   <div className='py-10 w-full relative'>
+   <div className='py-0 w-full relative'>
      <img
       src={profile}
       className="w-full relative bg-transparent rounded-full z-0.5 shadow-2xl mx-auto"
@@ -46,11 +46,11 @@ const HomePageBanner = () => {
         Provident cupiditate voluptatem et in. Quaerat fugiat  ut assumenda excepturi exercitationem
         quasi. In deleniti eaque aut repudiandae et a id nisi.
       </p>
-      <div className='w-1/2 flex flex-col lg:flex-row justify-between items-start gap-3'>
+      <div className='w-1/2 flex flex-row justify-between items-start gap-3'>
       <a
-       href="https://drive.google.com/file/d/17wLXz1ptk7R1x2o1a2rBeFZoIdrIay1T/view?usp=drive_link" 
-  target="_blank" 
-  rel="noopener noreferrer"
+       href="https://drive.google.com/file/d/17wLXz1ptk7R1x2o1a2rBeFZoIdrIay1T/view?usp=sharing"
+        target="_blank" 
+        rel="noopener noreferrer"
       className="border border-[#ff014f] px-2 py-1  hover-border-[#ff014f] transition-all duration-900 hover:bg-transparent text-lg hover:text-[#ff014f] btn shadow-none rounded-none text-white bg-[#ff014f]"><FaRegShareSquare /> Resume</a>
      <Link to={'/contact'}>
      <button className="px-2 py-1 border border-[#ff014f] transition-all duration-900 bg-transparent text-lg text-[#ff014f] btn shadow-none rounded-none hover:text-white hover:bg-[#ff014f]"> <IoCall/> Contact</button>

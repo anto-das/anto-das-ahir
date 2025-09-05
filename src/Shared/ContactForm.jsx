@@ -13,19 +13,19 @@ const ContactForm = () => {
     <div className="w-full py-8">
         <form className="lg:px-4 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5">
           <div className="w-full py-4">
-          <input type="text" className="input w-full p-8 focus:text-gray-400 text-lg" placeholder="Your Name" />
+          <input type="text" className="input w-full p-4 focus:text-gray-400 text-md" placeholder="Your Name" />
           </div>
           <div className="w-full py-4">
-          <input type="number" className="input w-full p-8 focus:text-gray-400 text-lg" placeholder="Phone Number" /> 
+          <input type="number" className="input w-full p-4 focus:text-gray-400 text-md" placeholder="Phone Number" /> 
           </div >
           <div className="w-full py-4">
-          <input type="email" className="input w-full p-8 focus:text-gray-400 text-lg" placeholder="Your Email" /> 
+          <input type="email" className="input w-full p-4 focus:text-gray-400 text-md" placeholder="Your Email" /> 
           </div>
           <div className="w-full py-4">
-          <input type="text" className="input w-full p-8 focus:text-gray-400 text-lg" placeholder="Subject" /> 
+          <input type="text" className="input w-full p-4 focus:text-gray-400 text-md" placeholder="Subject" /> 
           </div>
           <div className="w-full py-3 lg:col-span-2">
-                <button className="btn shadow-none border-none bg-[#ff014f] mt-4 w-full p-8 text-white font-bold text-lg rounded-4xl">Appointment Now<FaArrowRightLong className="mt-1" /></button>
+                <button className="btn shadow-none border-none bg-[#ff014f] mt-4 w-full p-4 text-white font-bold text-md rounded-4xl">Appointment Now<FaArrowRightLong className="mt-1" /></button>
           </div>
         </form>
       
