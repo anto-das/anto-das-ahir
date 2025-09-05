@@ -7,12 +7,12 @@ import { IoCall } from 'react-icons/io5';
 import { FaRegShareSquare } from 'react-icons/fa';
 const HomePageBanner = () => {
     return (
-     <div style={{backgroundImage:`url(${bgImg})`}} className='w-full h-185 md:h-100 lg:h-120 bg-cover bg-center bg-no-repeat relative'>
+     <div style={{backgroundImage:`url(${bgImg})`}} className='w-full h-190 md:h-80 lg:h-100 bg-cover py-5 bg-center bg-no-repeat relative'>
            <div className='space-y-5 flex flex-col justify-between items-center absolute inset-0 bg-black/50 '>
            <div className="hero w-11/12 mx-atuo">
   <div className="hero-content justify-center items-center py-10 flex-col md:flex-row-reverse lg:flex-row-reverse">
     {/* image div */}
-   <div className='py-0 w-full relative'>
+   <div className='py-4 w-full relative'>
      <img
       src={profile}
       className="w-full relative bg-transparent rounded-full z-0.5 shadow-2xl mx-auto"
@@ -20,12 +20,12 @@ const HomePageBanner = () => {
     <h1 style={{
     color: "transparent",
     WebkitTextStroke: "2px #ff014f",
-  }} className=' hidden lg:block text-3xl md:text-5xl lg:text-5xl font-bold uppercase text-center absolute bottom-40 left-20 z-1 animate__animated animate__infinite	infinite animate__slow	6s animate__bounce'>web developer</h1>
+  }} className=' hidden lg:block lg:text-4xl font-bold uppercase text-center absolute bottom-25 left-24 z-1 animate__animated animate__infinite	infinite animate__slow	6s animate__bounce'>web developer</h1>
    </div>
    {/* introduce div */}
-    <div className='space-y-5'>
+    <div className='space-y-3'>
     <h4 className='text-2xl font-bold text-white uppercase tracking-[5px]'>Hello</h4>
-      <h1 className="text-5xl font-bold text-white">i'm Anto Das Ahir a
+      <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">i'm Anto Das Ahir a
       </h1>
        <TypeAnimation
       sequence={[
@@ -39,10 +39,10 @@ const HomePageBanner = () => {
       ]}
       wrapper="span"
       speed={20}
-      className='font-medium text-[#ff014f] capitalize text-xl md:text-3xl lg:text-5xl'
+      className='font-medium text-[#ff014f] capitalize text-xl md:text-2xl lg:text-5xl'
       repeat={Infinity}
     />
-      <p className="py-3 text-lg text-[#969696]">
+      <p className="py-3 text-normal text-[#969696]">
        Driven by curiosity, passion, and the art of transforming ideas into digital reality, this creative junior web developer combines code and design to create slick, responsive, and captivating web experiences.
       </p>
       <div className='w-1/2 flex flex-row justify-between items-start gap-3'>
