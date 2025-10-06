@@ -1,21 +1,24 @@
 [
-  {
-    "thumbnail": "https://i.ibb.co.com/CKZggXj1/cart.jpg",
-    "projectName": "Deal Heaven",
-    "shortDescription": "Coupon and deals platform with user-friendly interface.",
-    "category":"frontend",
+   {
+    "thumbnail": "https://i.ibb.co.com/ynMx3c6x/card-7.jpg",
+    "projectName": "Global Givers",
+    "shortDescription": "Donation platform connecting givers with causes worldwide easily.",
+    "category":"full-stack",
     "techStack": {
-      "html":"HTML", 
-      "css":"CSS", 
-       "react":"React", 
-      "tailwindcss":"TailwindCSS",
-      "node" :  "Node.js", 
-       "express":  "Express", 
-       "mongodb":  "MongoDB"
-    },
+      "html":"HTML",
+      "css": "CSS",
+      "tailwindcss":   "TailwindCSS",
+      "javascript":   "Javascript",
+      "react":  "React",
+      "node":    "Node.js",
+      "express":     "Express",
+      "jwt":     "JWT",
+      "mongodb":      "MongoDB"
+          },
     "links": {
-      "live": "https://deal-heaven-8213e.web.app",
-      "client": "https://github.com/anto-das/DEAL-HEAVEN"
+      "live": "https://global-givers.web.app/",
+      "client": "https://github.com/anto-das/global-givers-client",
+      "server": "https://github.com/anto-das/global-givers-server"
     }
   },
   {
@@ -40,25 +43,22 @@
     }
   },
   {
-    "thumbnail": "https://i.ibb.co.com/ynMx3c6x/card-7.jpg",
-    "projectName": "Global Givers",
-    "shortDescription": "Donation platform connecting givers with causes worldwide easily.",
-    "category":"full-stack",
+    "thumbnail": "https://i.ibb.co.com/CKZggXj1/cart.jpg",
+    "projectName": "Deal Heaven",
+    "shortDescription": "Coupon and deals platform with user-friendly interface.",
+    "category":"frontend",
     "techStack": {
-      "html":"HTML",
-      "css": "CSS",
-      "tailwindcss":   "TailwindCSS",
-      "javascript":   "Javascript",
-      "react":  "React",
-      "node":    "Node.js",
-      "express":     "Express",
-      "jwt":     "JWT",
-      "mongodb":      "MongoDB"
-          },
+      "html":"HTML", 
+      "css":"CSS", 
+       "react":"React", 
+      "tailwindcss":"TailwindCSS",
+      "node" :  "Node.js", 
+       "express":  "Express", 
+       "mongodb":  "MongoDB"
+    },
     "links": {
-      "live": "https://global-givers.web.app/",
-      "client": "https://github.com/anto-das/global-givers-client",
-      "server": "https://github.com/anto-das/global-givers-server"
+      "live": "https://deal-heaven-8213e.web.app",
+      "client": "https://github.com/anto-das/DEAL-HEAVEN"
     }
   }
 ]
