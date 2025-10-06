@@ -43,11 +43,11 @@ const HomePageBanner = () => {
       repeat={Infinity}
     />
       <p className="py-3 text-normal text-[#969696]">
-       Driven by curiosity, passion, and the art of transforming ideas into digital reality, this creative junior web developer combines code and design to create slick, responsive, and captivating web experiences.
+      Junior MERN Stack Developer with proven ability to design and implement full-stack applications. Skilled in writing clean, optimized code and passionate about solving problems through innovative, user-focused solutions.
       </p>
       <div className='w-1/2 flex flex-row justify-between items-start gap-3'>
       <a
-       href="https://drive.google.com/file/d/18mIm_iCOJFVC9LnA5a5Iu3qeysq_iMxa/view?usp=sharing"
+       href="https://drive.google.com/file/d/1_9QoXXNU-hR55BT2Y7dLATyDDH6sasH2/view?usp=drive_link"
         target="_blank" 
         rel="noopener noreferrer"
       className="border border-[#ff014f] px-2 py-1  hover-border-[#ff014f] transition-all duration-900 hover:bg-transparent text-lg hover:text-[#ff014f] btn shadow-none rounded-none text-white bg-[#ff014f]"><FaRegShareSquare /> Resume</a>
