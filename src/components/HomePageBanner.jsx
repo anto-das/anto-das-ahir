@@ -9,20 +9,20 @@ const HomePageBanner = () => {
   return (
     <div
       style={{ backgroundImage: `url(${bgImg})` }}
-      className="w-full h-170 md:h-80 lg:h-100 bg-cover py-5 lg:mb-20 bg-center bg-no-repeat relative"
+      className="w-full h-170 md:h-80 lg:h-120 bg-cover bg-center bg-no-repeat relative"
     >
       <div className="space-y-5 flex flex-col justify-between items-center absolute inset-0 bg-black/50 ">
         <div className="hero w-11/12 mx-auto">
-          <div className="hero-content mx-auto justify-center items-center py-10 flex-col md:flex-row-reverse lg:flex-row-reverse">
+          <div className="hero-content md:w-11/14 lg:w-11/14 flex mx-auto justify-between items-center mt-8 flex-col md:flex-row-reverse lg:flex-row-reverse">
             {/* image div */}
-            <div className="py-4 w-3xl hover:w-[820px] relative">
+            <div className="py-4 max-w-[350px]">
               <img
                 src={profile}
-                className="w-full relative bg-transparent border border-[#ff014f] rounded-lg z-0.5 shadow-xl shadow-[#ff014dc7] mx-auto"
+                className="w-full relative bg-transparent border border-[#ff014f] rounded-lg z-0.5 shadow-xl shadow-[#ff014dc7]  mx-auto"
               />
             </div>
             {/* introduce div */}
-            <div className="space-y-3">
+            <div className="space-y-3 w-full lg:w-1/3">
               <h4 className="text-2xl font-bold text-white uppercase tracking-[5px]">
                 Hello
               </h4>
@@ -32,16 +32,16 @@ const HomePageBanner = () => {
               <TypeAnimation
                 sequence={[
                   // Same substring at the start will only be typed out once, initially
-                  "Junior Fullstack Developer.",
+                  "Junior Developer.",
                   2000, // wait 1s before replacing "Mice" with "Hamsters"
                   "Frontend Developer.",
                   2000,
-                  "MERN stack-Developer.",
+                  "MERNstack-Developer.",
                   2000,
                 ]}
                 wrapper="span"
                 speed={20}
-                className="font-medium text-[#ff014f] capitalize text-xl md:text-2xl lg:text-5xl"
+                className="font-medium text-[#ff014f] capitalize text-xl md:text-2xl lg:text-3xl"
                 repeat={Infinity}
               />
               <p className="py-3 text-normal text-[#969696]">

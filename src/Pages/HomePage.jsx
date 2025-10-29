@@ -41,7 +41,7 @@ const HomePage = () => {
                     <SkillChart></SkillChart>
               <div className="my-14">
             <h1 className="text-3xl font-bold text-white py-4">Projects<span className="text-gray-700">__________</span></h1>
-                <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 w-full rounded">
+                <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-8 w-11/14 mx-auto rounded">
                 {
                     projects.map((project,idx) =><ProjectsCard key={idx} project={project}></ProjectsCard>)
                 }

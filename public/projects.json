@@ -1,5 +1,30 @@
 [
    {
+    "id":1,
+    "thumbnail": "https://i.ibb.co.com/nM9mCcJR/dessert-bg.jpg",
+    "projectName": "Velvet Ember",
+    "shortDescription": "Culinary Haven: Where Taste Meets Experience.",
+    "category":"full-stack",
+    "techStack": {
+      "html":"HTML",
+      "css": "CSS",
+      "tailwindcss":   "TailwindCSS",
+      "javascript":   "Javascript",
+      "react":  "React",
+      "node":    "Node.js",
+      "express":     "Express",
+      "jwt":     "JWT",
+      "stripe":      "stripe",
+      "mongodb":      "MongoDB"
+          },
+    "links": {
+      "live": "https://velvet-ember.web.app/",
+      "client": "https://github.com/anto-das/Velvet-Ember-client",
+      "server": "https://github.com/anto-das/Velvet-Ember-server"
+    }
+  },
+   {
+    "id":2,
     "thumbnail": "https://i.ibb.co.com/ynMx3c6x/card-7.jpg",
     "projectName": "Global Givers",
     "shortDescription": "Donation platform connecting givers with causes worldwide easily.",
@@ -22,6 +47,7 @@
     }
   },
   {
+    "id":3,
     "thumbnail": "https://i.ibb.co.com/d2gMtN9/spider.jpg",
     "projectName": "GameScope",
     "shortDescription": "Game review website with ratings, comments, and recommendations.",
@@ -43,6 +69,7 @@
     }
   },
   {
+    "id":4,
     "thumbnail": "https://i.ibb.co.com/CKZggXj1/cart.jpg",
     "projectName": "Deal Heaven",
     "shortDescription": "Coupon and deals platform with user-friendly interface.",
