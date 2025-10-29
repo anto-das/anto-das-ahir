@@ -12,7 +12,11 @@ const SkillChart = () => {
             </div>
             <div>
                 <p className='uppercase font-bold text-white text-lg'>css | tailwindCSS</p>
-                <progress className="progress text-[#ff014f] bg-[#141414] w-full" value={70} max="80"></progress>
+                <progress className="progress text-[#ff014f] bg-[#141414] w-full" value={100} max="80"></progress>
+            </div>
+            <div>
+                <p className='uppercase font-bold text-white text-lg'>css | tailwindCSS</p>
+                <progress className="progress text-[#ff014f] bg-[#141414] w-full" value={100} max="80"></progress>
             </div>
             <div>
                 <p className='uppercase font-bold text-white text-lg'>Javascript</p>
@@ -33,6 +37,14 @@ const SkillChart = () => {
             <div>
                 <p className='uppercase font-bold text-white text-lg'>mongoDb</p>
                 <progress className="progress text-[#ff014f] bg-[#141414] w-full" value={30} max="100"></progress>
+            </div>
+            <div>
+                <p className='uppercase font-bold text-white text-lg'>REST APIs</p>
+                <progress className="progress text-[#ff014f] bg-[#141414] w-full" value={30} max="100"></progress>
+            </div>
+            <div>
+                <p className='uppercase font-bold text-white text-lg'>JWT</p>
+                <progress className="progress text-[#ff014f] bg-[#141414] w-full" value={100} max="100"></progress>
             </div>
         </div>
         <div className="grid lg:grid-cols-2 gap-x-8 space-y-8 pt-10">
@@ -56,6 +68,10 @@ const SkillChart = () => {
             </div>
             <div>
                 <p className='uppercase font-bold text-white text-lg'>vs code</p>
+                <progress className="progress text-[#ff014f] bg-[#141414] w-full" value={100} max="100"></progress>
+            </div>
+            <div>
+                <p className='uppercase font-bold text-white text-lg'>chrome dev tool</p>
                 <progress className="progress text-[#ff014f] bg-[#141414] w-full" value={100} max="100"></progress>
             </div>
         </div>

@@ -7,20 +7,16 @@ import { IoCall } from 'react-icons/io5';
 import { FaRegShareSquare } from 'react-icons/fa';
 const HomePageBanner = () => {
     return (
-     <div style={{backgroundImage:`url(${bgImg})`}} className='w-full h-190 md:h-80 lg:h-100 bg-cover py-5 bg-center bg-no-repeat relative'>
+     <div style={{backgroundImage:`url(${bgImg})`}} className='w-full h-170 md:h-80 lg:h-100 bg-cover py-5 lg:mb-20 bg-center bg-no-repeat relative'>
            <div className='space-y-5 flex flex-col justify-between items-center absolute inset-0 bg-black/50 '>
-           <div className="hero w-11/12 mx-atuo">
-  <div className="hero-content justify-center items-center py-10 flex-col md:flex-row-reverse lg:flex-row-reverse">
+           <div className="hero w-11/12 mx-auto">
+  <div className="hero-content mx-auto justify-center items-center py-10 flex-col md:flex-row-reverse lg:flex-row-reverse">
     {/* image div */}
    <div className='py-4 w-full relative'>
      <img
       src={profile}
-      className="w-full relative bg-transparent rounded-full z-0.5 shadow-2xl mx-auto"
+      className="w-full relative bg-transparent rounded-lg z-0.5 shadow-2xl mx-auto"
     />
-    <h1 style={{
-    color: "transparent",
-    WebkitTextStroke: "2px #ff014f",
-  }} className=' hidden lg:block lg:text-4xl font-bold uppercase text-center absolute bottom-25 left-24 z-1 animate__animated animate__infinite	infinite animate__slow	6s animate__bounce'>web developer</h1>
    </div>
    {/* introduce div */}
     <div className='space-y-3'>

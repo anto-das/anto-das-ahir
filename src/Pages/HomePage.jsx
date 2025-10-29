@@ -16,15 +16,7 @@ const HomePage = () => {
         <div>
             <HomePageBanner></HomePageBanner>
             <div className="py-8 w-11/12 mx-auto">
-              <div className=" my-14">
-            <h1 className="text-3xl font-bold text-white py-4">Projects<span className="text-gray-700">__________</span></h1>
-                <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 w-full rounded">
-                {
-                    projects.map((project,idx) =><ProjectsCard key={idx} project={project}></ProjectsCard>)
-                }
-                </div>
-            </div>
-           <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-22">
            <Card 
            icon={<MdOutlineDesignServices />}
            title={'Total project'}
@@ -46,7 +38,15 @@ const HomePage = () => {
            info={'I have completed full-stack apps with React, Node.js, MongoDB, JWT, Framer-motion.'}
            ></Card>           
            </div>
-           <SkillChart></SkillChart>
+                    <SkillChart></SkillChart>
+              <div className="my-14">
+            <h1 className="text-3xl font-bold text-white py-4">Projects<span className="text-gray-700">__________</span></h1>
+                <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 w-full rounded">
+                {
+                    projects.map((project,idx) =><ProjectsCard key={idx} project={project}></ProjectsCard>)
+                }
+                </div>
+            </div>
             <Education></Education>
            </div>
             <ContactForm></ContactForm>
