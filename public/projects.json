@@ -9,12 +9,15 @@
       "html":"HTML",
       "css": "CSS",
       "tailwindcss":   "TailwindCSS",
+      "daisyui":"daisyui",
       "javascript":   "Javascript",
       "react":  "React",
+      "reactHookForm":"react hook form",
+      "firebase":"firebase",
       "node":    "Node.js",
       "express":     "Express",
       "jwt":     "JWT",
-      "stripe":      "stripe",
+      "stripe":      "stripe js",
       "mongodb":      "MongoDB"
           },
     "links": {
