@@ -18,7 +18,7 @@ const HomePageBanner = () => {
             <div className="py-4 max-w-[350px]">
               <img
                 src={profile}
-                className="w-full relative bg-transparent border border-[#ff014f] rounded-lg z-0.5 shadow-xl shadow-[#ff014dc7]  mx-auto"
+                className="w-full relative bg-transparent border hover:border-[#ff014dc7]  transition-transform  duration-700 ease-in-out hover:scale-101 will-change-transform [backface-visibility:hidden] rounded-lg z-0.5 shadow-xl shadow-[#ff014d6c]  mx-auto"
               />
             </div>
             {/* introduce div */}

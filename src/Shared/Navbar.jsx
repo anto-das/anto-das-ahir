@@ -33,7 +33,7 @@ const Navbar = () => {
     const links =<>
     <ul className="lg:flex items-center hidden gap-5">
       <li><NavLink to={'/'} className={'text-white font-bold text-[16px] hover:bg-[#ff014d3f] hover:text-[#FF014F] p-2 rounded transition-all duration-900'}>Home</NavLink></li>
-      <li><NavLink to={'/about'} className={'text-white font-bold text-[16px] hover:bg-[#ff014d3f] hover:text-[#FF014F] p-2 rounded transition-all duration-900'}>About</NavLink></li>
+      {/* <li><NavLink to={'/about'} className={'text-white font-bold text-[16px] hover:bg-[#ff014d3f] hover:text-[#FF014F] p-2 rounded transition-all duration-900'}>About</NavLink></li> */}
       <li><NavLink to={'/project'} className={'text-white font-bold text-[16px] hover:bg-[#ff014d3f] hover:text-[#FF014F] p-2 rounded transition-all duration-900'}>Projects</NavLink></li>
       <li><NavLink to={'/contact'} className={'text-white font-bold text-[16px] hover:bg-[#ff014d3f] hover:text-[#FF014F] p-2 rounded transition-all duration-900'}>Contact</NavLink></li>
     </ul>
