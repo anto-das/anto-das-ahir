@@ -7,11 +7,9 @@ import { IoCall } from "react-icons/io5";
 import { FaRegShareSquare } from "react-icons/fa";
 const HomePageBanner = () => {
   return (
-    <div
-      style={{ backgroundImage: `url(${bgImg})` }}
-      className="w-full h-170 md:h-80 lg:h-120 bg-cover bg-center bg-no-repeat relative"
+    <div className="w-full h-170 md:h-80 lg:h-120 bg-cover bg-[#0a0e18] bg-center bg-no-repeat relative"
     >
-      <div className="space-y-5 flex flex-col justify-between items-center absolute inset-0 bg-black/50 ">
+      <div className="space-y-5 flex flex-col justify-between items-center absolute inset-0 ">
         <div className="hero w-11/12 mx-auto">
           <div className="hero-content md:w-11/14 lg:w-11/14 flex mx-auto justify-between items-center mt-8 flex-col md:flex-row-reverse lg:flex-row-reverse">
             {/* image div */}

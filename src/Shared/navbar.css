@@ -1,8 +1,10 @@
 .active{
-    /* 'text-white font-bold text-[16px] hover:bg-[#ff014d3f] hover:text-[#FF014F] p-2 rounded transition-all duration-900' */
-    background-color: #ff014d4f;   
-    color: #ff014f;
-    padding: 8px;
-    transition: all;
-    transition-duration: 900;
+    font-size: 18px;
+    border:none;
+    border-radius: 3px;
+    box-shadow: none;
+    background-color: #ff014d13;
+    color: #FF014F;
+    padding: 13px 22px;
+    font-weight: 600;
 }

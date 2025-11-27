@@ -9,6 +9,7 @@ import ProjectsCard from "../components/ProjectsCard";
 import ContactForm from "../Shared/ContactForm";
 import HomePageBanner from "../components/HomePageBanner";
 import DevSkill from "../components/DevSkill";
+import Introduction from "../components/Introduction";
 
 
 const HomePage = () => {
@@ -17,6 +18,9 @@ const HomePage = () => {
     <div>
       <HomePageBanner></HomePageBanner>
       <div className="py-8 w-11/12 mx-auto">
+      
+      <Introduction></Introduction>
+
         <DevSkill></DevSkill>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-22">

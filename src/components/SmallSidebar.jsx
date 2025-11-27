@@ -18,7 +18,7 @@ const SmallSidebar = ({closeDrawer}) => {
         <div className="menu bg-[#141414] text-base-content min-h-full py-7 px-7 md:px-6 lg:px-8 space-y-5 w-[80%]">
             <div className='flex justify-between items-center'>
         <Logo></Logo>
-        <button onClick={()=>closeDrawer()} className="drawer-button btn btn-circle border-none shadow-none transition duration-500 hover:bg-[#FF014F] bg-black text-white text-xl"><RxCross1 /></button>
+        <button onClick={()=>closeDrawer()} className="drawer-button btn-lg btn-circle border-none shadow-none transition duration-500 text-[#FF014F] hover:rotate-90 bg-[#ff014d13] text-2xl"><RxCross1 className='ml-3'/></button>
         </div>
       <div>
         {links}

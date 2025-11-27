@@ -5,25 +5,10 @@ import { useEffect, useState } from "react";
 
 
 const Main = () => {
-    const [isSticky,setSticky] =useState(false);
-      const handleScroll = () =>{
-        if(window.scrollY > 160){
-          setSticky(true)
-        }
-        else{
-          setSticky(false)
-        }
-      }
-      useEffect(()=>{
-        window.addEventListener('scroll',handleScroll)
-        return ()=>{
-          window.removeEventListener('scroll',handleScroll)
-        }
-      },[])
     return (
-        <div className="relative bg-black">
+        <div className="relative bg-[#0a0e18]">
             {/* navbar */}
-          <div className={`${isSticky ? 'sticky' :'relative'} top-0 z-20`}>
+          <div className={`sticky top-0 z-20`}>
               <Navbar></Navbar>
           </div>
             <Outlet></Outlet>
