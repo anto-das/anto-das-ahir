@@ -1,25 +1,32 @@
-
 import { HiMenu } from "react-icons/hi";
-import { Link, NavLink, } from "react-router-dom";
-import SocialIcons from "../components/SocialIcons";
-import { FaBuysellads } from "react-icons/fa";
-import LargeSidebar from "../components/LargeSidebar";
+import { Link, useLocation, } from "react-router-dom";
 import SmallSidebar from "../components/SmallSidebar";
 import Logo from "./Logo";
-import './navbar.css'
-import { useEffect, useState } from "react";
 
+
+// .active{
+//     font-size: 18px;
+//     border:none;
+//     border-radius: 3px;
+//     box-shadow: none;
+//     background-color: #0e182d;
+//     color: #326ed1;
+//     padding: 13px 22px;
+//     font-weight: 600;
+//     border: 1px solid #326fd186;
+// }
 
 const Navbar = () => {
+  const location = useLocation();
   const closeDrawer=()=>{
     document.getElementById("my-drawer").checked = false;
     document.getElementById("my-drawer-4").checked = false;
   }
     const links =<>
     <ul className="lg:flex items-center hidden gap-5">
-      <li><NavLink to={'/'} className={'btn btn-lg bg-[#0a0e18] border-none shadow-none text-gray-400 font-bold text-lg '}>Home</NavLink></li>
-      <li><NavLink to={'/project'} className={'btn btn-lg bg-[#0a0e18] border-none shadow-none text-gray-400 font-bold text-lg '}>Projects</NavLink></li>
-      <li><NavLink to={'/contact'} className={'btn btn-lg bg-[#0a0e18] border-none shadow-none text-gray-400 font-bold text-lg '}>Contact</NavLink></li>
+      <a href={'/'}  className={`${location.pathname === '/' ? 'text-[18px] border-none shadow-none bg-[#0e182d] text-[#326ed1] py-[13px] px-[22px] font-semibold border border-[#326fd186]' : 'btn btn-lg bg-[#0a0e18] border-none shadow-none text-gray-400  text-lg hover:bg-[#80808013] transition-transform duration-700 hover:-translate-y-0.5'}`}>Home</a>
+      <a href={'/project'} className={`${location.pathname === '/project' ? 'text-[18px] border-none shadow-none bg-[#0e182d] text-[#326ed1] py-[13px] px-[22px] font-semibold border border-[#326fd186]' : 'btn btn-lg bg-[#0a0e18] border-none shadow-none text-gray-400  text-lg hover:bg-[#80808013] transition-transform duration-700 hover:-translate-y-0.5'}`}>Projects</a>
+      <a href={'/contact'} className={`${location.pathname === '/contact' ? 'text-[18px] border-none shadow-none bg-[#0e182d] text-[#326ed1] py-[13px] px-[22px] font-semibold border border-[#326fd186]' : 'btn btn-lg bg-[#0a0e18] border-none shadow-none text-gray-400  text-lg hover:bg-[#80808013] transition-transform duration-700 hover:-translate-y-0.5'}`}>Contact Me</a>
     </ul>
     </>
     return (

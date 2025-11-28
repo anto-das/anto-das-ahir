@@ -1,73 +1,56 @@
-import bgImg from "../assets/mkm5.jpg";
+
 import profile from "../assets/blur img.jpg";
-import { TypeAnimation } from "react-type-animation";
 import "animate.css";
 import { Link } from "react-router-dom";
-import { IoCall } from "react-icons/io5";
+import { IoCall, IoMail } from "react-icons/io5";
 import { FaRegShareSquare } from "react-icons/fa";
+import { GoDotFill } from "react-icons/go";
+import { FaDownload } from "react-icons/fa6";
+import SocialIcons from "./SocialIcons";
 const HomePageBanner = () => {
   return (
-    <div className="w-full h-170 md:h-80 lg:h-120 bg-cover bg-[#0a0e18] bg-center bg-no-repeat relative"
+    <div id="top" className="min-h-[90vh] flex justify-center items-center bg-cover bg-[#0e1322] bg-center bg-no-repeat relative"
     >
-      <div className="space-y-5 flex flex-col justify-between items-center absolute inset-0 ">
-        <div className="hero w-11/12 mx-auto">
-          <div className="hero-content md:w-11/14 lg:w-11/14 flex mx-auto justify-between items-center mt-8 flex-col md:flex-row-reverse lg:flex-row-reverse">
+        <div className="hero mx-auto">
+          <div className="w-11/14 flex mx-auto justify-between items-center mt-0 flex-col md:flex-row-reverse lg:flex-row-reverse">
             {/* image div */}
-            <div className="py-4 max-w-[350px]">
+            <div className="max-w-1/2 shadow-2xl shadow-[#326fd186]">
               <img
                 src={profile}
-                className="w-full relative bg-transparent border hover:border-[#ff014dc7]  transition-transform  duration-700 ease-in-out hover:scale-101 will-change-transform [backface-visibility:hidden] rounded-lg z-0.5 shadow-xl shadow-[#ff014d6c]  mx-auto"
+                className="w-full relative transition-transform  duration-700 ease-in-out hover:scale-101 will-change-transform rounded-lg z-0.5  mx-auto"
               />
             </div>
             {/* introduce div */}
-            <div className="space-y-3 w-full lg:w-1/3">
-              <h4 className="text-2xl font-bold text-white uppercase tracking-[5px]">
-                Hello
-              </h4>
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">
-                i'm Anto Das Ahir a
+            <div  className="space-y-5 w-full lg:w-1/2">
+              <div className="btn rounded-full border-[#326fd186] bg-[#0e182d] shadow-none bg-none text-[#326ed1]"> <GoDotFill className="mt-1 text-lg animate__animated animate__flash animate__delay-1 animate__infinite	infinite animate__slower"/> Full-stack web developer </div>
+              <h1 className="text-3xl md:text-4xl lg:text-7xl font-extrabold text-white">
+                Anto <span className="text-[#326ed1]">Das Ahir</span>
               </h1>
-              <TypeAnimation
-                sequence={[
-                  // Same substring at the start will only be typed out once, initially
-                  "Junior Developer.",
-                  2000, // wait 1s before replacing "Mice" with "Hamsters"
-                  "Frontend Developer.",
-                  2000,
-                  "MERNstack-Developer.",
-                  2000,
-                ]}
-                wrapper="span"
-                speed={20}
-                className="font-medium text-[#ff014f] capitalize text-xl md:text-2xl lg:text-3xl"
-                repeat={Infinity}
-              />
-              <p className="py-3 text-normal text-[#969696]">
-                Junior MERN Stack Developer with proven ability to design and
-                implement full-stack applications. Skilled in writing clean,
-                optimized code and passionate about solving problems through
-                innovative, user-focused solutions.
+              <p className="py-3 text-lg font-semibold text-gray-400">
+                Hi, I am a dedicated and fully passionate full-stack web developer who creates user-friendly websites. I will always give my best to deliver high-quality work and help you achieve your goals.
               </p>
-              <div className="w-1/2 flex flex-row justify-between items-start gap-3">
+              <div className="flex w-full flex-col md:flex-row lg:flex-row items-start gap-6">
+               <Link to={"/contact"}>
+                  <button className="btn w-full shadow-lg flex justify-between items-center text-[16px] shadow-[#326fd186] btn-lg hover:bg-[#0948c7] bg-[#2a6aed]  border-none font-bold text-gray-300 transition-transform duration-700 hover:-translate-y-0.5">
+                    {" "}
+                    <IoMail /> Let's Talk
+                  </button>
+                </Link>
                 <a
                   href="https://drive.google.com/file/d/1wnmw2lWXYNxnRb86jJoElszTU-Tta8lO/view?usp=drive_link"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="border border-[#ff014f] px-2 py-1  hover-border-[#ff014f] transition-all duration-900 hover:bg-transparent text-lg hover:text-[#ff014f] btn shadow-none rounded-none text-white bg-[#ff014f]"
+                  className="btn bg-[#0e1322] w-full lg:w-1/2 shadow-none border border-[#2a6aed] flex gap-4 items-center text-[16px] font-bold text-[#2a6aed] btn-lg hover:bg-[#80808013] transition-transform duration-900 hover:-translate-y-0.5"
                 >
-                  <FaRegShareSquare /> Resume
+                  <FaDownload /> Download Resume
                 </a>
-                <Link to={"/contact"}>
-                  <button className="px-2 py-1 border border-[#ff014f] transition-all duration-900 bg-transparent text-lg text-[#ff014f] btn shadow-none rounded-none hover:text-white hover:bg-[#ff014f]">
-                    {" "}
-                    <IoCall /> Contact
-                  </button>
-                </Link>
+              </div>
+              <div className="mt-8">
+                <SocialIcons></SocialIcons>
               </div>
             </div>
           </div>
         </div>
-      </div>
     </div>
   );
 };
