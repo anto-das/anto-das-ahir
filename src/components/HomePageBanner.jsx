@@ -12,9 +12,9 @@ const HomePageBanner = () => {
     <div id="top" className="min-h-[90vh] flex justify-center items-center bg-cover bg-[#0e1322] bg-center bg-no-repeat relative"
     >
         <div className="hero mx-auto">
-          <div className="w-11/14 flex mx-auto justify-between items-center mt-0 flex-col md:flex-row-reverse lg:flex-row-reverse">
+          <div className="w-11/13 space-y-5 flex mx-auto justify-between items-center mt-0 flex-col md:flex-row-reverse lg:flex-row-reverse">
             {/* image div */}
-            <div className="max-w-1/2 shadow-2xl shadow-[#326fd186]">
+            <div className="max-w-[650px] shadow-2xl shadow-[#326fd186]">
               <img
                 src={profile}
                 className="w-full relative transition-transform  duration-700 ease-in-out hover:scale-101 will-change-transform rounded-lg z-0.5  mx-auto"

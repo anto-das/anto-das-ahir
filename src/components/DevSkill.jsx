@@ -1,9 +1,15 @@
 import { MdOutlineMonitor } from "react-icons/md";
+import TitleBox from "./TitleBox";
 
 
 const DevSkill = () => {
     return (
          <div className='w-11/14 mx-auto  py-5 my-8'>
+          <TitleBox 
+          title={'Technical Arsenal'}
+          name={'Technologies & Tools'}
+          intro={"Full-stack expertise across modern web technologies"}
+          ></TitleBox>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
               {/* frontend div */}
               <div className="border lg:col-span-2 transition-transform duration-900 shadow-xl hover:shadow-[#0a0e18] rounded-lg text-white p-8 space-y-3 border-[#16294c] bg-[#1323412a] will-change-transform [backface-visibility:hidden]  group">
