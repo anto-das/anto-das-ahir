@@ -8,7 +8,7 @@ import TechBlueprint from "../../ui/TechBluePrint";
 import ProjectActions from "../../ui/ProjectActions";
 
 // 🛠️ আপনার মক/প্রজেক্ট JSON ডাটা ফাইলটি এখানে ইমপোর্ট করুন (পাথ আপনার প্রজেক্ট অনুযায়ী চেঞ্জ করতে পারেন)
-import projectsData from "../../../../public/projects.json";
+import projectsData from "./public/projects.json";
 
 const ProjectDetails = () => {
   // 🛠️ ফিক্স ১: ইউআরএল থেকে ডায়নামিক :id প্যারামিটারটি রিসিভ করা
