@@ -20,12 +20,6 @@ AOS.init({
   easing: "ease-out", // Acceleration pattern smoothness setup
 });
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-);
-
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <RouterProvider router={router} />

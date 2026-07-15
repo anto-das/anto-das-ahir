@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom"; // 🛠️ ফিক্স: useParams ইমপোর্ট করা হলো
 import { motion } from "framer-motion";
 import { HiOutlineArrowLeft, HiOutlineSquare3Stack3D } from "react-icons/hi2";
@@ -8,14 +8,23 @@ import TechBlueprint from "../../ui/TechBluePrint";
 import ProjectActions from "../../ui/ProjectActions";
 
 // 🛠️ আপনার মক/প্রজেক্ট JSON ডাটা ফাইলটি এখানে ইমপোর্ট করুন (পাথ আপনার প্রজেক্ট অনুযায়ী চেঞ্জ করতে পারেন)
-import projectsData from "./public/projects.json";
+import projectsData from "../../../../public/projects.json";
+import useData from "../../../hooks/useData";
 
 const ProjectDetails = () => {
   // 🛠️ ফিক্স ১: ইউআরএল থেকে ডায়নামিক :id প্যারামিটারটি রিসিভ করা
+  const [projects, setProjects] = useState([]);
+  //   const fetchData = () =>{}
+  useEffect(() => {
+    fetch("/public/projects.json")
+      .then((res) => res.json())
+      .then((data) => setProjects(data));
+  }, []);
+
   const { id } = useParams();
 
   // 🛠️ ফিক্স ২: JSON ডাটা থেকে আইডি নাম্বার অথবা স্লাগ স্ট্রিং ম্যাচ করে নির্দিষ্ট প্রজেক্ট খুঁজে বের করা
-  const project = projectsData?.find(
+  const project = projects?.find(
     (p) =>
       p.id === Number(id) ||
       p.projectName?.toLowerCase().replace(/\s+/g, "-") === id,
