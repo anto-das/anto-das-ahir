@@ -8,6 +8,8 @@ import AboutSection from "../components/modules/about/AboutPage";
 import ContactMe from "../components/modules/contact/ContactPage";
 import ProjectDetails from "../components/modules/project/projectDetail";
 
+import projects from "../../public/projects.json";
+
 const router = createBrowserRouter([
   {
     path: "/",

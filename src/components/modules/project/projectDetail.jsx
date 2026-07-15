@@ -9,26 +9,12 @@ import ProjectActions from "../../ui/ProjectActions";
 
 // 🛠️ আপনার মক/প্রজেক্ট JSON ডাটা ফাইলটি এখানে ইমপোর্ট করুন (পাথ আপনার প্রজেক্ট অনুযায়ী চেঞ্জ করতে পারেন)
 import projectsData from "../../../../public/projects.json";
-import useData from "../../../hooks/useData";
 
 const ProjectDetails = () => {
-  // 🛠️ ফিক্স ১: ইউআরএল থেকে ডায়নামিক :id প্যারামিটারটি রিসিভ করা
-  const [projects, setProjects] = useState([]);
-  //   const fetchData = () =>{}
-  useEffect(() => {
-    fetch("/public/projects.json")
-      .then((res) => res.json())
-      .then((data) => setProjects(data));
-  }, []);
-
   const { id } = useParams();
 
   // 🛠️ ফিক্স ২: JSON ডাটা থেকে আইডি নাম্বার অথবা স্লাগ স্ট্রিং ম্যাচ করে নির্দিষ্ট প্রজেক্ট খুঁজে বের করা
-  const project = projects?.find(
-    (p) =>
-      p.id === Number(id) ||
-      p.projectName?.toLowerCase().replace(/\s+/g, "-") === id,
-  );
+  const project = projectsData?.find((p) => p.id === id);
 
   // নতুন প্রজেক্টে ক্লিক করার সাথে সাথে পেজটি স্ক্রল হয়ে একদম ওপরে চলে যাবে
   useEffect(() => {
@@ -36,7 +22,7 @@ const ProjectDetails = () => {
   }, [project]);
 
   // সেফটি চেক: যদি ভুল আইডি বা স্লাগ দিয়ে কেউ ইউআরএল হিট করে তবে ক্র্যাশ না করে এই 404 দেখাবে
-  if (!project) {
+  if (project?.length === 0) {
     return (
       <div className="min-h-screen bg-[#0a0e18] flex flex-col items-center justify-center text-white p-4">
         <h2 className="text-xl font-bold tracking-wider text-red-500 font-mono mb-2">

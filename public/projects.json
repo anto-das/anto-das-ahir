@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "1",
     "thumbnail": "https://i.ibb.co.com/GqPbtF3/Screenshot-7.png",
     "projectName": "MediCare",
     "shortDescription": "Healthcare Management: Elevating Patient Care and Medical Operations.",
@@ -37,7 +37,7 @@
     }
   },
   {
-    "id": 2,
+    "id": "2",
     "thumbnail": "https://i.ibb.co.com/nM9mCcJR/dessert-bg.jpg",
     "projectName": "Velvet Ember",
     "shortDescription": "Culinary Haven: Where Taste Meets Restaurant Management Experience.",
