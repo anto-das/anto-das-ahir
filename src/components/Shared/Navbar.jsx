@@ -89,18 +89,10 @@ const Navbar = () => {
 
         {/* RIGHT: PORTFOLIO UTILITIES CONTROLLERS (DARK SCHEME) */}
         <div className="hidden lg:flex items-center gap-3">
-          {/* Quick Search Shortcut Mock UI */}
-          <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900/50 border border-slate-800 text-slate-500 hover:border-slate-700 transition-all cursor-pointer">
-            <HiSearch className="w-4 h-4" />
-            <span className="text-[11px] font-medium tracking-wider">
-              CMD + K
-            </span>
-          </div>
-
           {/* Social Connect Link Handles */}
           <div className="flex items-center gap-1 bg-slate-900/40 p-1 rounded-full border border-slate-800/80">
             <a
-              href="https://github.com"
+              href="https://github.com/anto-das"
               target="_blank"
               rel="noreferrer"
               className="p-2 rounded-full text-slate-400 hover:bg-slate-800 hover:text-white shadow-none transition-all"
@@ -108,7 +100,7 @@ const Navbar = () => {
               <FaGithub className="w-4 h-4" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/anto-das-ahir-7b539a348"
               target="_blank"
               rel="noreferrer"
               className="p-2 rounded-full text-slate-400 hover:bg-slate-800 hover:text-[#326ed1] shadow-none transition-all"
@@ -219,7 +211,7 @@ const Navbar = () => {
               >
                 <div className="flex items-center justify-center gap-4 text-slate-400 py-1">
                   <a
-                    href="https://github.com"
+                    href="https://github.com/anto-das"
                     target="_blank"
                     rel="noreferrer"
                     className="hover:text-white transition-colors"
@@ -227,7 +219,7 @@ const Navbar = () => {
                     <FaGithub className="w-5 h-5" />
                   </a>
                   <a
-                    href="https://linkedin.com"
+                    href="https://www.linkedin.com/in/anto-das-ahir-7b539a348"
                     target="_blank"
                     rel="noreferrer"
                     className="hover:text-[#326ed1] transition-colors"

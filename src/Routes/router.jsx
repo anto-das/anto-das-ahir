@@ -6,6 +6,7 @@ import AboutPage from "../components/modules/about/AboutPage";
 import HomePage from "../components/modules/home/HomePage";
 import AboutSection from "../components/modules/about/AboutPage";
 import ContactMe from "../components/modules/contact/ContactPage";
+import ProjectDetails from "../components/modules/project/projectDetail";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,11 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <ContactMe></ContactMe>,
+      },
+      {
+        path: "/project/:id",
+        element: <ProjectDetails></ProjectDetails>,
+        loader: ({ params }) => fetch(`/projects.json/${params.id}`),
       },
     ],
   },

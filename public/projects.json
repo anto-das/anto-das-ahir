@@ -1,98 +1,73 @@
 [
-   {
-    "id":1,
-    "thumbnail": "https://i.ibb.co.com/nM9mCcJR/dessert-bg.jpg",
-    "projectName": "Velvet Ember",
-    "shortDescription": "Culinary Haven: Where Taste Meets Experience.",
-    "category":"full-stack",
-    "techStack": {
-      "html":"HTML5",
-      "css": "CSS3",
-      "tailwindcss":   "TailwindCSS",
-      "daisyui":"daisyui",
-      "javascript":   "Javascript",
-      "reactJs":  "ReactJs",
-      "reactHookForm":"react hook form",
-      "firebase":"firebase",
-      "node":    "Node.js",
-      "express":     "Express",
-      "jwt":     "JWT",
-      "stripe":      "stripe js",
-      "mongodb":      "MongoDB"
-          },
-    "links": {
-      "live": "https://velvet-ember.web.app/",
-      "client": "https://github.com/anto-das/Velvet-Ember-client",
-      "server": "https://github.com/anto-das/Velvet-Ember-server"
-    }
-  },
-   {
-    "id":2,
-    "thumbnail": "https://i.ibb.co.com/ynMx3c6x/card-7.jpg",
-    "projectName": "Global Givers",
-    "shortDescription": "Donation platform connecting givers with causes worldwide easily.",
-    "category":"full-stack",
-    "techStack": {
-      "html":"HTML",
-      "css": "CSS",
-      "tailwindcss":   "TailwindCSS",
-       "daisyui":"daisyui",
-      "javascript":   "Javascript",
-      "reactJs":  "ReactJs",
-      "node":    "Node.js",
-      "express":     "Express",
-      "jwt":     "JWT",
-      "mongodb":      "MongoDB"
-          },
-    "links": {
-      "live": "https://global-givers.web.app/",
-      "client": "https://github.com/anto-das/global-givers-client",
-      "server": "https://github.com/anto-das/global-givers-server"
-    }
-  },
   {
-    "id":3,
-    "thumbnail": "https://i.ibb.co.com/d2gMtN9/spider.jpg",
-    "projectName": "GameScope",
-    "shortDescription": "Game review website with ratings, comments, and recommendations.",
-    "category":"full-stack",
+    "id": 1,
+    "thumbnail": "https://i.ibb.co.com/GqPbtF3/Screenshot-7.png",
+    "projectName": "MediCare",
+    "shortDescription": "Healthcare Management: Elevating Patient Care and Medical Operations.",
+    "description": "MedCare is an advanced, production-grade full-stack healthcare management platform engineered to modernize medical administration and elevate patient service workflows. Built on a cutting-edge client stack featuring Next.js and TypeScript, the system leverages a modular architecture styled with Shadcn UI, Tailwind CSS, and Shadcnblocks for a fluid user experience. Robust client-side validation is enforced via Zod. The high-performance backend runtime environment is driven by Node.js and Express.js, seamlessly interacting with a PostgreSQL database through the Prisma ORM. Security is heavily fortified using Better Auth alongside custom role-based access control (RBAC) to isolate permissions for patients, doctors, and system administrators. Key operations include appointment scheduling, health logging, and structured medical flow diagrams designed via Draw.io. Complete with full cookie-parser security, CORS optimization, and seamless Stripe Intent API integration for automated billing pipelines, the entire ecosystem is optimized for high scalability and securely deployed on Vercel.",
+    "category": "full-stack",
     "techStack": {
-      "html":"HTML",
-       "css":"CSS", 
-       "tailwindcss":"TailwindCSS",
-        "daisyui":"daisyui",
-       "javascript":"Javascript",
-       "reactJs":"ReactJs",
-      "node" :  "Node.js", 
-       "express":  "Express", 
-       "mongodb":  "MongoDB"
-        },
-    "links": {
-      "live": "https://game-scope.web.app",
-      "client": "https://github.com/anto-das/game-scope-client",
-      "server": "https://github.com/anto-das/game-scope-server"
-    }
-  },
-  {
-    "id":4,
-    "thumbnail": "https://i.ibb.co.com/CKZggXj1/cart.jpg",
-    "projectName": "Deal Heaven",
-    "shortDescription": "Coupon and deals platform with user-friendly interface.",
-    "category":"frontend",
-    "techStack": {
-      "html":"HTML", 
-      "css":"CSS", 
-      "javascript":"Javascript",
-       "reactJs":"ReactJs", 
-      "tailwindcss":"TailwindCSS",
-       "daisyui":"daisyui",
-      "node" :  "Node.js", 
-       "express":  "Express", 
-       "mongodb":  "MongoDB"
+      "frontend": {
+        "language": "TypeScript",
+        "markup": "HTML5",
+        "styling": "CSS3",
+        "framework": "Next.js",
+        "uiComponents": ["Shadcn UI", "Shadcnblocks"],
+        "design": "Tailwind CSS",
+        "validation": "Zod Validation",
+        "auth": "Better Auth",
+        "architecture": "Modular Architecture"
+      },
+      "backend": {
+        "runtime": "Node.js",
+        "framework": "Express.js",
+        "database": "PostgreSQL",
+        "orm": "Prisma",
+        "auth": "Better Auth",
+        "security": ["Role-Based Access Control", "Cookie-parser", "CORS"],
+        "payment": "Stripe Intent API",
+        "diagrams": "Draw.io",
+        "configuration": "Dotenv"
+      }
     },
     "links": {
-      "live": "https://deal-heaven-8213e.web.app",
-      "client": "https://github.com/anto-das/DEAL-HEAVEN"
+      "live": "https://medistore-rouge.vercel.app",
+      "client": "https://github.com/anto-das/medi-care-client",
+      "server": "https://github.com/anto-das/medicare-payment-server"
+    }
+  },
+  {
+    "id": 2,
+    "thumbnail": "https://i.ibb.co.com/nM9mCcJR/dessert-bg.jpg",
+    "projectName": "Velvet Ember",
+    "shortDescription": "Culinary Haven: Where Taste Meets Restaurant Management Experience.",
+    "description": "Velvet Ember is an advanced full-stack restaurant management and culinary platform engineered to streamline modern dining administration and enhance user engagement. The client architecture is built using React.js and dynamic routing, delivering a highly responsive and interactive user experience stylized with Tailwind CSS and DaisyUI components. Form validation and secure layout flows are driven by React Hook Form. The robust backend pipeline operates on Node.js and Express.js, utilizing Mongoose for schema-based data modeling and reliable CRUD interactions with a MongoDB database. Core features include an interactive food catalog, real-time inventory updates, automated table reservation workflows, and customizable online food orders. Security is managed through Firebase Authentication paired with JWT-signed server-side cookies. Complete with an integrated Stripe.js billing framework and specialized analytics dashboards for staff management, the platform transforms traditional dining into a secure, fast, and feature-rich digital e-commerce ecosystem.",
+    "category": "full-stack",
+    "techStack": {
+      "frontend": {
+        "language": "JavaScript",
+        "markup": "HTML5",
+        "styling": "CSS3",
+        "framework": "React.js",
+        "uiComponents": ["DaisyUI"],
+        "design": "Tailwind CSS",
+        "validation": "React Hook Form",
+        "auth": "Firebase Authentication"
+      },
+      "backend": {
+        "runtime": "Node.js",
+        "framework": "Express.js",
+        "database": "MongoDB",
+        "orm": "Mongoose ODM",
+        "auth": "JWT Protection",
+        "security": ["Protected Routes", "Secure Cookies"],
+        "payment": "Stripe.js"
+      }
+    },
+    "links": {
+      "live": "https://velvet-ember.web.app",
+      "client": "https://github.com/anto-das/Velvet-Ember-client",
+      "server": "https://github.com/anto-das/Velvet-Ember-server"
     }
   }
 ]
