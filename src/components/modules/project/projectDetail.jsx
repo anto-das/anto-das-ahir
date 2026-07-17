@@ -3,14 +3,13 @@ import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { HiOutlineArrowLeft, HiOutlineSquare3Stack3D } from "react-icons/hi2";
 
-// সাব-কম্পোনেন্ট ইমপোর্ট
+
 import TechBlueprint from "../../ui/TechBluePrint";
 import ProjectActions from "../../ui/ProjectActions";
 
-// JSON ডাটা ফাইল ইমপোর্ট
+
 import projectsData from "../../../../public/projects.json";
 
-// ফ্রেমার মোশন অ্যানিমেশন ভেরিয়েন্টস (স্মুথ স্ট্যাগার ইফেক্টের জন্য)
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -31,7 +30,7 @@ const itemVariants = {
 const ProjectDetails = () => {
   const { id } = useParams();
 
-  // JSON ডাটা থেকে আইডি ম্যাচ করা (Type-safe করার জন্য String এ কনভার্ট করা হয়েছে)
+  
   const project = projectsData?.find((p) => String(p.id) === String(id));
 
   // পেজ স্ক্রল টপ ইফেক্ট
