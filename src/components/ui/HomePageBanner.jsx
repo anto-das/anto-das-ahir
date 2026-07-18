@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import profile from "../../assets/Gemini_Generated_Image_hrij6khrij6khrij.png";
+import profile from "../../assets/Gemini_Generated_Image_hrij6khrij6khrij(1).png";
 import { Link } from "react-router-dom";
 import { IoMail } from "react-icons/io5";
 import { FaDownload } from "react-icons/fa6";
