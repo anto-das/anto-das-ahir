@@ -111,7 +111,8 @@ const Navbar = () => {
 
           {/* Dynamic Download Resume Action Button */}
           <motion.a
-            href="/resume.pdf"
+            href="https://drive.google.com/file/d/1LXEfXMxBburfr1NcJafq5YWdAMup2LYh/view?usp=sharing"
+            target="_blank"
             download
             whileHover={{
               scale: 1.03,
