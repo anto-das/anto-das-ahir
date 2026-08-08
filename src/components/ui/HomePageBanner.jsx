@@ -108,7 +108,7 @@ const HomePageBanner = () => {
               </Link>
 
               <a
-                href="https://drive.google.com/file/d/1U4NQ8WoGnSvHxvbceJOYUeUCCmdEa5RB/view?usp=sharing"
+                href="https://drive.google.com/file/d/1bbYrwwT3dcIFrkLl3LqJrSCWgLc42mRD/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn w-full sm:w-auto px-8 h-12 min-h-0 bg-transparent border border-slate-700 hover:border-[#326ed1] hover:bg-[#326ed1]/10 text-slate-300 hover:text-white rounded-full font-bold text-xs tracking-widest uppercase flex items-center justify-center gap-2 transform hover:-translate-y-0.5 transition-all duration-300"
