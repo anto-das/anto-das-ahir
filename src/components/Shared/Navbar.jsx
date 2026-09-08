@@ -111,7 +111,7 @@ const Navbar = () => {
 
           {/* Dynamic Download Resume Action Button */}
           <motion.a
-            href="https://drive.google.com/file/d/1bbYrwwT3dcIFrkLl3LqJrSCWgLc42mRD/view?usp=sharing"
+            href="https://drive.google.com/file/d/1j_MYpn6isrS6_hlIV7YPCyZLS4LRyKm9/view?usp=sharing"
             target="_blank"
             download
             whileHover={{
