@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 // 🛠️ FIX: Primitive location icon mapping corrected to HiLocationMarker to ensure zero compilation crash
 import {
   HiHashtag,
@@ -10,6 +10,7 @@ import { HiPaperAirplane } from "react-icons/hi2";
 import TitleBox from "../../ui/TitleBox";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import emailjs from "@emailjs/browser";
 
 const ContactMe = () => {
   const [formState, setFormState] = useState({
@@ -17,6 +18,9 @@ const ContactMe = () => {
     email: "",
     message: "",
   });
+
+  const form = useRef();
+
   const [isSending, setIsSending] = useState(false);
 
   const [copiedState, setCopiedState] = useState({
@@ -47,12 +51,27 @@ const ContactMe = () => {
     e.preventDefault();
     setIsSending(true);
 
-    // Simulate API Pipeline Endpoint Submission
-    setTimeout(() => {
-      alert(`System Node Message Received! Thank you ${formState.name}.`);
-      setFormState({ name: "", email: "", message: "" });
-      setIsSending(false);
-    }, 1500);
+    emailjs
+      .sendForm(
+        "service_zctxc9l", // 👈 এখানে আপনার Service ID বসান
+        "template_rkditwb", // 👈 এখানে আপনার Template ID বসান
+        form.current,
+        "JP55dno3693CSIySc", // 👈 এখানে আপনার Public Key বসান
+      )
+      .then(
+        (result) => {
+          alert(`Message successfully delivered to terminal!`);
+          setFormState({ name: "", email: "", message: "" });
+        },
+        (error) => {
+          console.log(error);
+          alert("Failed to send message. Please try again directly via email.");
+          console.error(error.text);
+        },
+      )
+      .finally(() => {
+        setIsSending(false);
+      });
   };
 
   return (
@@ -188,6 +207,7 @@ const ContactMe = () => {
             data-aos-delay="250"
           >
             <form
+              ref={form}
               onSubmit={handleSubmit}
               className="p-6 sm:p-8 rounded-3xl border border-slate-800/80 bg-slate-950/30 backdrop-blur-sm shadow-2xl flex flex-col gap-5 h-full justify-between"
             >

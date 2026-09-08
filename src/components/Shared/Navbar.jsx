@@ -100,7 +100,7 @@ const Navbar = () => {
               <FaGithub className="w-4 h-4" />
             </a>
             <a
-              href="https://www.linkedin.com/in/anto-das-ahir-7b539a348"
+              href="https://www.linkedin.com/in/anto-das-7b539a348/"
               target="_blank"
               rel="noreferrer"
               className="p-2 rounded-full text-slate-400 hover:bg-slate-800 hover:text-[#326ed1] shadow-none transition-all"
